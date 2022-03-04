@@ -36,6 +36,12 @@ Following the capabilities of this action:
     <td>(Optional) Build context for Docker agent</td>
     <td><code>./</code></td>
   </tr>
+  
+  <tr>
+    <td><code>branch</code><br/></td>
+    <td>(Optional) Branch to root the context off of</td>
+    <td><code>master</code></td>
+  </tr>
 
   <tr>
     <td><code>repository</code><br/></td>
@@ -136,6 +142,7 @@ jobs:
           git_access_token: ${{ secrets.git_access_token }}
           folder: src/docker
           dockerfile: ../../dockerfiles/Dockerfile
+          branch: main
 ```
 
 # Contributing
