@@ -97,6 +97,12 @@ Following the capabilities of this action:
     <td></td>
   </tr>
 
+  <tr>
+    <td><code>platform</code><br/></td>
+    <td>(Optional) Build platform, windows or linux with optional arch variant (/arm/v7). Default to linux </td>
+    <td></td>
+  </tr>
+
 </table>
 
 ## Example usage
