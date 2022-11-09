@@ -32,6 +32,9 @@ inputs:
   branch:
     description: "Branch to build from, defaults to master"
     required: false
+  platform:
+    description: "Build platform, windows or linux with optional arch variant (/arm/v7). Default to linux"
+    required: false
   folder:
     description: "The folder in the Github repo that holds the source"
     required: true
