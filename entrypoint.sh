@@ -3,7 +3,7 @@ set -e
 
 INPUT_DOCKERFILE=${INPUT_DOCKERFILE:-Dockerfile}
 INPUT_TAG=${INPUT_TAG:-${GITHUB_SHA::8}}
-INPUT_BRANCH=${INPUT_BRANCH:-master}
+INPUT_BRANCH=${INPUT_BRANCH:-main}
 IMAGE_PART=""
 if [ -n "$INPUT_BUILD_ARGS" ]; then
         BUILD_ARGS=`echo -n ${INPUT_BUILD_ARGS:-''} |jq -j '.[] | keys[] as $k | values[] as $v |  "--build-arg \($k)=\"\($v)\" "'`
