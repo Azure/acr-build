@@ -17,6 +17,10 @@ if [ -n "$INPUT_GIT_ACCESS_TOKEN" ]; then
         GIT_ACCESS_TOKEN_FLAG="${INPUT_GIT_ACCESS_TOKEN}@"
 fi
 
+if [ -n "$INPUT_SUBSCRIPTION" ]; then
+  az account set -s $INPUT_SUBSCRIPTION
+fi
+
 echo "Building Docker image ${INPUT_REPOSITORY}${IMAGE_PART}:${INPUT_TAG} from ${GITHUB_REPOSITORY} on ${INPUT_BRANCH} and using context ${INPUT_FOLDER} ; and pushing it to ${INPUT_REGISTRY} Azure Container Registry"
 
 echo "Logging into azure.."
