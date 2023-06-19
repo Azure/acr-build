@@ -97,6 +97,11 @@ Following the capabilities of this action:
     <td></td>
   </tr>
 
+  <tr>
+    <td><code>subscription</code></td>
+    <td>(Optional) The Subscription name or ID</td>
+    <td></td>
+  </tr>
 </table>
 
 ## Example usage

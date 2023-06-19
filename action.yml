@@ -41,6 +41,9 @@ inputs:
   build_args:
     description: "JSON specifying key=value pairs as as Docker build arguments"
     required: false
+  subscription:
+    description: "The Subscription Name or ID"
+    required: false
 runs:
   using: "docker"
   image: "Dockerfile"
